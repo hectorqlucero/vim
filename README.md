@@ -33,3 +33,8 @@ My vim dotfiles
       (let [name "John"])
       (println name))
     ```
+
+## Example development environment with vim and Fireplace
+1. On the root of your Lein project open vim with a terminal that allows creating tabs ex. xfece4-terminal
+2. Open a tab on your terminal pointing to the same code root and start a repl *lein repl*
+3. Once the repl is running you can evaluate code as explained above in *Usage*
