@@ -4,7 +4,7 @@ My vim dotfiles
 ## Usage
 - Clone in your vim config directory, usually ~/
 - mv vim .vim
-- To bring up vifm type *\\*
+- To bring up vifm type *\\\\*
 - You need a repl under your code root to be able to use Fireplace within your vim editor
 - To load and compile:
     - *:Requre* Will load an compile the document you are editing.
