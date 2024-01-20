@@ -10,6 +10,7 @@ My vim dotfiles
 5. To Evaluate code: *cpp* will evaluate code on any function
 6. Editing example: Usually you will get by with this. For more information read Fireplace documentation
     ```
+    (ns demo.mydoc
     ;; From this code
     ;; Position curson on defn and type Ctl-.)
     (defn greet []
@@ -34,11 +35,11 @@ My vim dotfiles
       (println name))
 
 
-    
-    ;; To evaluate/compile this code: Position cursor on defn and type *cpp*
+    ;; To evaluate/compile this code: Position cursor on defn and type cpp
     (defn greet []
       (let [name "John"])
       (println name))
+    )
     ```
 
 ## Example development environment with vim and Fireplace
