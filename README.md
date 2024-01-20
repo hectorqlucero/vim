@@ -12,7 +12,7 @@ My vim dotfiles
     ```
     (ns demo.mydoc
     ;; From this code
-    ;; Position curson on defn and type Ctl-.)
+    ;; Position curson on defn and type Ctl-.-)  Note the dash is just a separator not to be typed. Just type CTL.)
     (defn greet []
       (let [name "John"])
       (println name))
@@ -24,7 +24,7 @@ My vim dotfiles
 
 
     ;; From this code
-    ;; Position cursor on defn and type Ctl-,)
+    ;; Position cursor on defn and type Ctl-,-) Note the dash is just a separator not to be typed. Just type CTL,)
     (defn greet []
       (let [name "John"]
       (println name)))
