@@ -2,7 +2,7 @@
 My vim dotfiles
 
 ## Requiremets
-- *virm* file manager
+- *vifm* file manager
 
 ## Usage
 - Clone in your vim config directory, usually ~/
