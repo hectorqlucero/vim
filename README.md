@@ -32,6 +32,13 @@ My vim dotfiles
     (defn greet []
       (let [name "John"])
       (println name))
+
+
+    
+    ;; To evaluate/compile this code: Position cursor on defn and type *cpp*
+    (defn greet []
+      (let [name "John"])
+      (println name))
     ```
 
 ## Example development environment with vim and Fireplace
