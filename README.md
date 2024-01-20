@@ -1,6 +1,9 @@
 # vim
 My vim dotfiles
 
+## Requiremets
+- *virm* file manager
+
 ## Usage
 - Clone in your vim config directory, usually ~/
 - mv vim .vim
