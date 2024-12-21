@@ -1,3 +1,6 @@
+syntax on
+filetype plugin indent on
+
 set nocp
 set number
 set laststatus=2
