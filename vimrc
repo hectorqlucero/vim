@@ -29,6 +29,9 @@ nnoremap <C-l> <C-w>l
 map <leader><Leader> :Vifm<cr>
 map <leader>d <C-w>o
 
+" NERDtree
+map <C-n> :NERDTreeToggle<CR>
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
@@ -43,6 +46,7 @@ Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/tpope/vim-sexp-mappings-for-regular-people.git'
 Plug 'https://github.com/guns/vim-sexp.git'
 Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fireplace'
