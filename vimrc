@@ -34,6 +34,32 @@ map <leader>d <C-w>o
 
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
+" Open nerdtree window on opening Vim
+autocmd VimEnter * NERDTree
+
+" Refresh the current folder if any changes
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+au CursorHold * if exists("t:NerdTreeBufName") | call <SNR>15_refreshRoot() | endif
+
+"Reload the window if directory is changed
+augroup DIRCHANGE
+    au!
+    autocmd DirChanged global :NERDTreeCWD
+augroup END
+
+"Close nerdtree automatically if it is theonly window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endi
+
+" Jump to a specific tab by typing the tab number
+nnoremap <Leader>t :call TabJump()<CR>
+function! TabJump()
+    let l:tab_num = input('Tab number: ')
+    if l:tab_num =~ '^\d\+$'
+        execute 'tabnext' l:tab_num
+    else
+        echo "Invalid tab number"
+    endif
+endfunction
 
 call plug#begin('~/.vim/plugged')
 
