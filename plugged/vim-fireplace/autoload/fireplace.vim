@@ -2433,8 +2433,10 @@ function! s:set_up_doc() abort
   setlocal keywordprg=:Doc
 
   call s:map('n', 'K', '<Plug>FireplaceK', '<unique>')
-  call s:map('n', '[d', '<Plug>FireplaceSource')
-  call s:map('n', ']d', '<Plug>FireplaceSource')
+  call s:map('n', '[D', '<Plug>FireplaceSource')
+  call s:map('n', ']D', '<Plug>FireplaceSource')
+  call s:map('n', '[d', '<Plug>FireplaceSource', '<unique>')
+  call s:map('n', ']d', '<Plug>FireplaceSource', '<unique>')
 endfunction
 
 " Section: Tests
@@ -2538,7 +2540,7 @@ function! s:RunTests(bang, count, ...) abort
     else
       let args = [fireplace#ns()]
       if a:count
-        let pattern = '^\s*(def\k*\s\+\(\h\k*\)'
+        let pattern = '^\s*(\%(\h\k*/\)\=def\k*\s\+\%(\^:\h\k*\s\+\)*\(\h\k*\)'
         let line = search(pattern, 'bcWn')
         if line
           let args[0] .= '/' . matchlist(getline(line), pattern)[1]

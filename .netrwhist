@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/hector/Repo/demo/src/sk/models'
+let g:netrw_dirhist_5='/home/hector/Repo/demo/src/sk'
+let g:netrw_dirhist_4='/home/hector/Repo/demo/src'
+let g:netrw_dirhist_3='/home/hector/Repo/demo'
+let g:netrw_dirhist_2='/home/hector/Repo'
+let g:netrw_dirhist_1='/home/hector'
+let g:netrw_dirhist_0='/home'
+let g:netrw_dirhist_9='/home/hector'
+let g:netrw_dirhist_8='/home/hector/Downloads'
+let g:netrw_dirhist_7='/home/hector/Downloads/tutorial'
