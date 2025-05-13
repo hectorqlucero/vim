@@ -163,6 +163,9 @@ augroup END
 "Close nerdtree automatically if it is theonly window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endi
 
+"Close nerdtree after a file is opened"
+let NERDTreeQuitOnOpen=1
+
 " LightLine; keep before vim colorscheme to prevent issues
 let g:lightline = {
       \ 'colorscheme': 'default',
@@ -189,8 +192,8 @@ set updatetime=300  " default 4000, idle milliseconds before writing to swap fil
 " Color settings
 """"""""""""""""
 set t_Co=256
-colorscheme minimalist
-set background=dark  " dark for dark colorschemes, light for light ones
+colorscheme morning
+set background=light  " dark for dark colorschemes, light for light ones
 
 " Fireplace at write time
 autocmd BufWritePost,FileWritePost *.clj :Require
