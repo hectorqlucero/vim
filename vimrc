@@ -192,8 +192,8 @@ set updatetime=300  " default 4000, idle milliseconds before writing to swap fil
 " Color settings
 """"""""""""""""
 set t_Co=256
-colorscheme morning
-set background=light  " dark for dark colorschemes, light for light ones
+colorscheme torte
+set background=dark  " dark for dark colorschemes, light for light ones
 
 " Fireplace at write time
 autocmd BufWritePost,FileWritePost *.clj :Require
